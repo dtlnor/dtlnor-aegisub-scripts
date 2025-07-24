@@ -51,7 +51,7 @@ function flickerline(subtitles, selected_lines, active_line)
 		subtitles[target_line] = process_line
 		::continue::
 	end
-
+	aegisub.set_undo_point("点灭特效生成")
 end
 
 aegisub.register_macro(script_name, script_description, flickerline)
